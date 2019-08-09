@@ -1,10 +1,17 @@
 import React from 'react'
 
-function Input(props) {
+import { InformationContext } from "../context/information-context";
+
+const Input = () => {
   return (
-    <div>
-      <p>Input Coponent: {props.information}</p>
-    </div>
+    <InformationContext.Consumer>
+      {value => (
+        <div>
+          <p>Input Coponent: {value.information}</p>
+        </div>
+      )}
+    </InformationContext.Consumer>
+    
   )
 }
 

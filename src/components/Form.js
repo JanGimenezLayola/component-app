@@ -2,10 +2,10 @@ import React from 'react'
 
 import Input from './Input'
 
-function Form(props) {
+const Form = () => {
   return (
     <div>
-      <Input information={props.information} />
+      <Input />
     </div>
   )
 }
