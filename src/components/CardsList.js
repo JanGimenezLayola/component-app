@@ -1,9 +1,11 @@
 import React from 'react'
 
-function CardsList() {
+import Form from './Form'
+
+function CardsList(props) {
   return (
     <div>
-      
+      <Form information={props.information}/>
     </div>
   )
 }

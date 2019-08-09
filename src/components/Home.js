@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import CardsList from './CardsList';
+
 class Home extends Component {
   
   state = {
@@ -7,9 +9,11 @@ class Home extends Component {
   }
 
   render() {
+    const { information } = this.state;
     return (
       <div>
-        {this.state.information}
+        <p>Home component: {information}</p>
+        <CardsList information={information} />
       </div>
     )
   }

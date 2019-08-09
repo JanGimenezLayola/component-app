@@ -1,9 +1,11 @@
 import React from 'react'
 
-function Form() {
+import Input from './Input'
+
+function Form(props) {
   return (
     <div>
-      
+      <Input information={props.information} />
     </div>
   )
 }
