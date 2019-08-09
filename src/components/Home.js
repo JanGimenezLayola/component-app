@@ -9,7 +9,7 @@ const Home = () => {
       <InformationContext.Consumer>
         {value => (
           <div>
-            <p>Home component: {value.information} </p>
+            <p>Home component: {value.state.information} </p>
             <CardsList />
           </div>
         )}

@@ -8,9 +8,18 @@ class InformationProvider extends Component {
     information: 'heeeeeeeeey'
   }
 
+  changeInformation = (newInformation) => {
+    this.setState({
+      information: newInformation,
+    })
+  }
+
   render() {
     return (
-      <InformationContext.Provider value={this.state}>
+      <InformationContext.Provider value={{
+        state: this.state,
+        changeInformation: this.changeInformation,
+        }}>
         {this.props.children}     
       </InformationContext.Provider>
     )
